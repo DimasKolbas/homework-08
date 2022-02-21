@@ -1,0 +1,35 @@
+//basic-settings
+@import 'base/_variable';
+@import 'base/_basic-settings';
+@import 'base/_container';
+@import 'base/_body';
+@import 'utils/_visually-hidden';
+@import 'components/_button';
+@import 'components/_icon-list';
+
+// header-section
+@import 'layouts/_header';
+@import 'components/_logo';
+@import 'components/_navigation';
+// hero-section
+@import 'layouts/hero';
+// benefits-section
+@import 'layouts/benefits';
+// job-section
+@import 'layouts/job';
+// command-section
+@import 'layouts/command';
+// costomers-section
+@import 'layouts/costomers';
+// footer-section
+@import 'layouts/footer';
+
+// PORTFOLIO-PAGE!!!
+// menu-section
+@import 'components/menu';
+@import 'components/button-menu';
+// portfolio-section
+@import 'layouts/portfolio';
+// modal-window
+@import 'components/modal-window';
+@import 'components/close';

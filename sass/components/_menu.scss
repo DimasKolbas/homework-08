@@ -1,0 +1,18 @@
+.menu {
+  max-width: 1200px;
+  margin: 94px auto 50px;
+}
+
+.menu-list {
+  display: flex;
+  padding: 0 284px;
+
+  &__item {
+    background-color: var(--button-color);
+    border-radius: 4px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}

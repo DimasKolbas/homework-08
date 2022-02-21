@@ -1,0 +1,39 @@
+.button {
+  padding: 10px auto;
+  width: 200px;
+  height: 50px;
+  background-color: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  &__text {
+    font-weight: 700;
+    line-height: 1.87em;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--light-color);
+  }
+
+  &__icon::after {
+    content: ' ';
+    display: inline-block;
+    background-size: contain;
+    margin: -6px 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/svg/send.svg);
+    fill: var(--light-color);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.hero__button {
+  margin-top: 30px;
+}

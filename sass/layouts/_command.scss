@@ -1,0 +1,51 @@
+.command {
+  max-width: 1600px;
+  margin: 94px auto 0;
+}
+.command-section {
+  background-color: var(--button-color);
+
+  &__caption {
+    padding: 94px 668px 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17em;
+    text-align: center;
+    color: var(--accent-color);
+  }
+}
+
+.command-list {
+  padding-bottom: 94px;
+
+  &__item {
+    background-color: var(--light-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__title {
+    margin: 30px 5px 10px;
+    font-weight: 500;
+    line-height: 1.19em;
+    text-align: center;
+    color: var(--accent-color);
+  }
+
+  &__text {
+    margin: 0 65px;
+    line-height: 1.19em;
+    text-align: center;
+    color: var(--secondary-color);
+    background: #ffffff;
+  }
+
+  &__icon-list {
+    margin: 16px 32px 30px;
+  }
+}
