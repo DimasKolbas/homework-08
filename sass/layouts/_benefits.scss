@@ -1,65 +1,39 @@
-.benefits {
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1600px) {
-  }
-}
-
 .benefits-list {
-  @media screen and (min-width: 480px) {
-  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    margin: 0 -15px 0;
     margin-bottom: -30px;
-  }
-  @media screen and (min-width: 1600px) {
   }
 
   &__item {
+    margin-bottom: 30px;
     @media screen and (min-width: 480px) {
       width: 450px;
     }
     @media screen and (min-width: 768px) {
-      flex-basis: calc(100% / 2 - 30px);
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 0 15px 0;
     }
     @media screen and (min-width: 1600px) {
-      width: 270px;
-      // flex-basis: calc(100% / 3 - 30px);
-      // margin: 0px 30px 30px 0;
+      flex-basis: calc((100% - 8 * 15px) / 4);
     }
   }
 
   &__item:not(:last-child) {
-    @media screen and (min-width: 480px) {
-      margin-bottom: 30px;
-      margin-right: 30px;
-    }
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1600px) {
-      margin-bottom: 0;
-      margin-right: 30px;
-    }
+    margin-bottom: 30px;
   }
 
   &__title {
-    @media screen and (min-width: 480px) {
-      margin: 30px 0 10px;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14em;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      text-align: center;
-    }
+    margin: 30px 0 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-align: center;
     @media screen and (min-width: 768px) {
       text-align: left;
-    }
-    @media screen and (min-width: 1600px) {
     }
   }
 
@@ -72,17 +46,8 @@
 
   &__icon-section {
     background-color: var(--button-color);
-    @media screen and (min-width: 480px) {
-      width: 450px;
-      height: 120px;
-      border-radius: 4px;
-    }
-    @media screen and (min-width: 768px) {
-      width: 354px;
-    }
-    @media screen and (min-width: 1600px) {
-      width: 270px;
-    }
+    height: 120px;
+    border-radius: 4px;
   }
 
   &__icon {
