@@ -1,7 +1,6 @@
 .container {
   min-width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   align-items: center;
 
   @media screen and (min-width: 480px) {
@@ -14,12 +13,12 @@
   }
   @media screen and (min-width: 1600px) {
     width: 1200px;
+    margin: 0 auto;
   }
 }
 
 .section {
   margin-top: 60px;
-  // margin-bottom: 60px;
   @media screen and (min-width: 1600px) {
     margin-top: 94px;
   }

@@ -1,17 +1,23 @@
 .logo {
-  margin-top: 16px auto;
-  // margin-right: 276px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: 700;
   font-size: 24px;
-  line-height: 1.16em;
+  line-height: 1.17em;
   font-family: var(--secondary-font);
   color: var(--hover-color);
-
   @media screen and (min-width: 480px) {
   }
-
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19px;
+  @media screen and (min-width: 768px) {
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+  @media screen and (min-width: 1600px) {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    font-size: 26px;
+    line-height: 1.19em;
+  }
 
   &--light {
     color: var(--light-color);
@@ -23,10 +29,22 @@
 }
 
 .header__logo {
-  // margin: 24px 93px 25px 0;
+  // margin-right: 295px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+  }
 }
 
 .footer__logo {
-  margin-bottom: 30px;
-  text-align: left;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 30px;
+    text-align: left;
+  }
 }
