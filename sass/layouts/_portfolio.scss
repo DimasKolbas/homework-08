@@ -1,20 +1,43 @@
 .portfolio {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto 64px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+    // width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto 64px;
+  }
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: left;
-  margin-right: -30px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px -30px;
+  }
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
 
   &__item {
-    flex-basis: calc(100% / 3 - 30px); /* вместо width: 370px; */
-    margin: 0px 30px 30px 0;
+    margin-bottom: 30px;
     background-color: var(--light-color);
     border: 1px solid #eeeeee;
+    text-align: left;
+    background-size: contain;
+    outline: 2px solid tomato;
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 0 15px 30px;
+    }
+    @media screen and (min-width: 1600px) {
+      flex-basis: calc((100% - 6 * 15px) / 3);
+    }
   }
 
   &__item:hover .portfolio-list--hover {
@@ -41,12 +64,25 @@
     line-height: 2em;
     letter-spacing: 0.06em;
     color: var(--accent-color);
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1600px) {
+    }
   }
 
   &__text {
     margin: 0 24px 20px;
     line-height: 1.88em;
     color: var(--secondary-color);
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1600px) {
+      margin: 0 24px 20px;
+    }
   }
 
   &--hover {
@@ -57,13 +93,27 @@
     text-align: left;
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1600px) {
+    }
   }
 
   &--hover-text {
-    margin: 63px 24px;
     font-size: 18px;
     line-height: 1.55em;
     color: var(--light-color);
     opacity: 1;
+    @media screen and (min-width: 480px) {
+      margin: 77px 24px;
+    }
+    @media screen and (min-width: 768px) {
+      margin: 49px 24px;
+    }
+    @media screen and (min-width: 1600px) {
+      margin: 63px 24px;
+    }
   }
 }

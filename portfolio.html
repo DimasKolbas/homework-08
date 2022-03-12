@@ -22,11 +22,17 @@
   </head>
 
     <!-- *HEADER SECTION*-->
-    <header class="header">
-      <div class="container">
+    <header class="header container">
+      <div class="header__section">
+        <!-- <div class="header__mobile-menu"></div> -->
         <a href="./index.html" class="logo header__logo link"
           >Web<span class="logo--black">Studio</span></a
         >
+        <button class="header__burger-button">
+          <svg class="header__burger-icon">
+            <use href="images/svg/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
 
         <nav class="navigation">
           <ul class="navigation__list">
@@ -67,9 +73,9 @@
     <!-- *MAIN SECTION -->
     <main>
       <!-- *MENU SECTION* -->
-      <section class="menu">
+      <section class="menu container">
         <div class="menu-section">
-          <!-- <h1 class="buttton-title">Portfolio</h1> -->
+          <h1 class="button-title visually-hidden">Портфолио</h1>
           <ul class="menu-list">
             <li class="menu-list__item link">
               <button type="button-menu" class="button-menu__text">Все</button>
@@ -91,7 +97,7 @@
       </section>
 
       <!-- *PORTFOLIO SECTION* -->
-      <section class="portfolio container section">
+      <section class="portfolio container">
         <div class="portfolio-section">
           <h2 class="visually-hidden">Портфолио</h2>
           <ul class="portfolio-list">
@@ -99,8 +105,6 @@
               <div class="portfolio-list__image">
                 <img
                   src="./images/portfolio/project1.jpg"
-                  width="370"
-                  height="294"
                   alt="Страница вебсайта Технокряк"
                 />
                 <div class="portfolio-list--hover">
@@ -115,8 +119,6 @@
               <div class="portfolio-list__image">
                 <img
                   src="./images/portfolio/project2.jpg"
-                  width="370"
-                  height="294"
                   alt="Постер с баскетболистами"
                 />
                 <div class="portfolio-list--hover">
@@ -131,8 +133,6 @@
               <div class="portfolio-list__image">
                 <img
                   src="./images/portfolio/project3.jpg"
-                  width="370"
-                  height="294"
                   alt="Логотип ресторана Seafood"
                 />
                 <div class="portfolio-list--hover">
@@ -147,8 +147,6 @@
               <div class="portfolio-list__image">
                 <img
                   src="./images/portfolio/project4.jpg"
-                  width="370"
-                  height="294"
                   alt="Логотип ресторана Seafood"
                 />
                 <div class="portfolio-list--hover">
@@ -163,8 +161,6 @@
               <div class="portfolio-list__image">
                 <img
                   src="./images/portfolio/project5.jpg"
-                  width="370"
-                  height="294"
                   alt="Логотип ресторана Seafood"
                 />
                 <div class="portfolio-list--hover">
@@ -179,8 +175,6 @@
               <div class="portfolio-list__image">
                 <img
                   src="./images/portfolio/project6.jpg"
-                  width="370"
-                  height="294"
                   alt="Логотип ресторана Seafood"
                 />
                 <div class="portfolio-list--hover">
@@ -195,8 +189,6 @@
               <div class="portfolio-list__image">
                 <img
                   src="./images/portfolio/project7.jpg"
-                  width="370"
-                  height="294"
                   alt="Логотип ресторана Seafood"
                 />
                 <div class="portfolio-list--hover">
@@ -211,8 +203,6 @@
               <div class="portfolio-list__image">
                 <img
                   src="./images/portfolio/project8.jpg"
-                  width="370"
-                  height="294"
                   alt="Логотип ресторана Seafood"
                 />
                 <div class="portfolio-list--hover">
@@ -227,8 +217,6 @@
               <div class="portfolio-list__image">
                 <img
                   src="./images/portfolio/project9.jpg"
-                  width="370"
-                  height="294"
                   alt="Логотип ресторана Seafood"
                 />
                 <div class="portfolio-list--hover">
@@ -244,44 +232,46 @@
     </main>
 
     <!-- *FOOTER SECTION* -->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container footer__container">
-        <div class="footer-section">
-          <p class="logo footer__logo">Web<span class="logo--light">Studio</span></p>
-          <address class="footer-adress">
-            <p class="footer-adress__text">г. Киев, пр-т Леси Украинки, 26</p>
-            <p class="footer-adress__text">info@example.com</p>
-            <p class="footer-adress__text">+38 099 111 11 11</p>
-          </address>
-        </div>
+        <div class="footer__action-container">
+          <div class="footer-section">
+            <p class="logo footer__logo">Web<span class="logo--light">Studio</span></p>
+            <address class="footer-adress">
+              <p class="footer-adress__text">г. Киев, пр-т Леси Украинки, 26</p>
+              <p class="footer-adress__text">info@example.com</p>
+              <p class="footer-adress__text">+38 099 111 11 11</p>
+            </address>
+          </div>
 
-        <div class="footer-action">
-          <p class="footer-action__text"><b>присоединяйтесь</b></p>
-          <ul class="icon-list link">
-            <li class="icon-list__item footer-action__icon-item">
-              <svg class="icon-list__icon">
-                <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </li>
+          <div class="footer-action">
+            <p class="footer-action__text"><b>присоединяйтесь</b></p>
+            <ul class="icon-list link">
+              <li class="icon-list__item footer-action__icon-item">
+                <svg class="icon-list__icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </li>
 
-            <li class="icon-list__item footer-action__icon-item">
-              <svg class="icon-list__icon">
-                <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </li>
+              <li class="icon-list__item footer-action__icon-item">
+                <svg class="icon-list__icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </li>
 
-            <li class="icon-list__item footer-action__icon-item">
-              <svg class="icon-list__icon">
-                <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </li>
+              <li class="icon-list__item footer-action__icon-item">
+                <svg class="icon-list__icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </li>
 
-            <li class="icon-list__item footer-action__icon-item">
-              <svg class="icon-list__icon">
-                <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </li>
-          </ul>
+              <li class="icon-list__item footer-action__icon-item">
+                <svg class="icon-list__icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="footer-subscription">

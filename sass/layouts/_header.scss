@@ -5,9 +5,10 @@
   }
 
   &__burger-button {
-    width: 25px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-left: auto;
+    padding: 0;
     background-color: transparent;
     border: none;
     @media screen and (min-width: 768px) {
@@ -19,8 +20,8 @@
   }
 
   &__burger-icon {
-    width: 30px;
-    height: 30px;
+    width: 55px;
+    height: 40px;
     @media screen and (min-width: 1600px) {
       margin: 10px auto;
       width: 40px;

@@ -29,7 +29,7 @@
     line-height: 1.18em;
     color: var(--accent-color);
     @media screen and (min-width: 768px) {
-      padding: 0;
+      // padding: 0;
     }
     @media screen and (min-width: 1600px) {
       font-size: 36px;
@@ -61,7 +61,6 @@
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 4 * 15px) / 2);
       margin: 0 15px 30px;
-      margin-bottom: 30px;
     }
     @media screen and (min-width: 1600px) {
       margin-bottom: 0;

@@ -6,8 +6,6 @@
   line-height: 1.17em;
   font-family: var(--secondary-font);
   color: var(--hover-color);
-  @media screen and (min-width: 480px) {
-  }
   @media screen and (min-width: 768px) {
     margin-top: 26px;
     margin-bottom: 26px;
@@ -25,26 +23,5 @@
 
   &--black {
     color: #000000;
-  }
-}
-
-.header__logo {
-  // margin-right: 295px;
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1600px) {
-  }
-}
-
-.footer__logo {
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1600px) {
-    margin-bottom: 30px;
-    text-align: left;
   }
 }
