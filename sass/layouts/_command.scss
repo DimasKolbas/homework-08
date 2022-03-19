@@ -28,9 +28,6 @@
     font-size: 28px;
     line-height: 1.18em;
     color: var(--accent-color);
-    @media screen and (min-width: 768px) {
-      // padding: 0;
-    }
     @media screen and (min-width: 1600px) {
       font-size: 36px;
       line-height: 1.17em;

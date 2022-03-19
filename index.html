@@ -77,7 +77,7 @@
       <section class="hero">
         <div class="hero__section">
           <h1 class="hero__caption">Эффективные решения для вашего бизнеса</h1>
-          <button class="button hero__button" type="button">
+          <button type="button" class="button hero__button" data-modal-open>
             <span class="button__text">Заказать услугу</span>
           </button>
         </div>
@@ -449,13 +449,13 @@
     </footer>
 
     <!-- *MODAL WINDOW* -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal-section">
-        <div class="close">
+        <button type="button" class="close" data-modal-close>
           <svg class="close__icon">
             <use href="./images/svg/symbol-defs.svg#icon-close"></use>
           </svg>
-        </div>
+        </button>
 
         <b class="modal-section__title">Оставьте свои данные, мы вам перезвоним</b>
         <form class="modal">
@@ -505,22 +505,24 @@
 
         <div class="signature">
           <input class="signature__checkbox" type="checkbox" name="checkbox" id="checkbox" />
-          <label class="signature__agreement" for="checkbox">
-            <span class="signature__title"
-              >Соглашаюсь с рассылкой и принимаю
-              <span class="signature__contract">Условия договора</span></span
-            >
+          <label class="signature__label" for="checkbox">
             <svg class="signature__icon">
               <use href="./images/svg/symbol-defs.svg#icon-rectangle"></use>
             </svg>
             <svg class="signature--check">
               <use href="./images/svg/symbol-defs.svg#icon-check"></use>
             </svg>
+            <span class="signature__agreement"
+              >Соглашаюсь с рассылкой и принимаю
+              <span class="signature__contract">Условия договора</span></span
+            >
           </label>
         </div>
 
         <button class="button button__text" type="submit">Отправить</button>
       </div>
     </div>
+
+    <script src="./js/modalWindow.js"></script>
   </body>
 </html>

@@ -1,16 +1,17 @@
 //basic-settings
-@import 'base/_variable';
-@import 'base/_basic-settings';
-@import 'base/_container';
-@import 'base/_body';
-@import 'utils/_visually-hidden';
-@import 'components/_button';
-@import 'components/_icon-list';
+@import 'base/variable';
+@import 'base/basic-settings';
+@import 'base/container';
+@import 'base/body';
+@import 'utils/visually-hidden';
+@import 'components/backdrop';
+@import 'components/button';
+@import 'components/icon-list';
 
 // header-section
-@import 'layouts/_header';
-@import 'components/_logo';
-@import 'components/_navigation';
+@import 'layouts/header';
+@import 'components/logo';
+@import 'components/navigation';
 // hero-section
 @import 'layouts/hero';
 // benefits-section

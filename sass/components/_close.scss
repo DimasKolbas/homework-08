@@ -2,13 +2,27 @@
 .close {
   position: absolute;
   top: 8px;
-  left: 490px;
+  margin-left: auto;
+  // margin: -31px -32px 0 auto;
+  // position: absolute;
+  // top: 8px;
+  // left: 412px;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
   cursor: pointer;
+  @media screen and (min-width: 480px) {
+    margin: 0;
+    left: 412px;
+    // position: absolute;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+    left: 490px;
+  }
 
   &:hover {
     fill: var(--hover-color);
@@ -16,11 +30,18 @@
 
   &__icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 117px;
     transform: translate(-50%, -50%);
     width: 18px;
     height: 18px;
     color: #000000;
+    @media screen and (min-width: 480px) {
+      top: 50%;
+      left: 50%;
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1600px) {
+    }
   }
 }
